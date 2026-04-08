@@ -1,0 +1,876 @@
+{
+  "generatedAt": "2026-04-08T22:02:39.765Z",
+  "timeframe": {
+    "start": "2026-01-07",
+    "end": "2026-04-07",
+    "days": 90
+  },
+  "methodology": {
+    "definition": "Impact means visible engineering influence in the repo across delivery, leverage, quality, coordination, and scope over the last 90 days.",
+    "weights": {
+      "delivery": 30,
+      "leverage": 25,
+      "quality": 20,
+      "collaboration": 15,
+      "scope": 10
+    },
+    "limitations": [
+      "This ranks repository evidence, not absolute company impact.",
+      "Detailed PR metadata was enriched through authenticated GitHub API access.",
+      "Collaboration is estimated from coordination signals on important PRs because public review-author data is incomplete without authenticated access.",
+      "It cannot see planning, mentoring outside GitHub, or incident leadership outside the repo."
+    ]
+  },
+  "leaders": [
+    {
+      "login": "pauldambra",
+      "rank": 1,
+      "impactScore": 80,
+      "archetype": "Feature Driver",
+      "scoreBreakdown": {
+        "delivery": 29,
+        "leverage": 6,
+        "quality": 20,
+        "collaboration": 15,
+        "scope": 10
+      },
+      "scoreInputs": {
+        "delivery": {
+          "raw": 93.02,
+          "parts": [
+            {
+              "label": "feature PR",
+              "value": 71.64,
+              "count": 49
+            },
+            {
+              "label": "initiative",
+              "value": 21.38,
+              "count": 16
+            }
+          ]
+        },
+        "leverage": {
+          "raw": 29.17,
+          "parts": [
+            {
+              "label": "shared-system PR",
+              "value": 24.13,
+              "count": 17
+            },
+            {
+              "label": "platform initiative",
+              "value": 5.04,
+              "count": 3
+            }
+          ]
+        },
+        "quality": {
+          "raw": 169.85,
+          "parts": [
+            {
+              "label": "fix/reliability PR",
+              "value": 169.85,
+              "count": 129
+            }
+          ]
+        },
+        "collaboration": {
+          "raw": 177.56,
+          "parts": [
+            {
+              "label": "discussion signal",
+              "value": 168.12,
+              "count": 145
+            },
+            {
+              "label": "initiative coordination signal",
+              "value": 9.44,
+              "count": 19
+            }
+          ]
+        },
+        "scope": {
+          "raw": 20.1,
+          "parts": [
+            {
+              "label": "initiative sequence",
+              "value": 20.1,
+              "count": 19
+            }
+          ]
+        }
+      },
+      "whyTheyRanked": [
+        "Shipped meaningful product-facing work.",
+        "Reduced risk with fixes, reliability, or quality work.",
+        "Handled work that required visible coordination and discussion."
+      ],
+      "evidence": [
+        {
+          "kind": "pr",
+          "title": "frontend rollout",
+          "url": "https://github.com/PostHog/posthog/pull/52854",
+          "summary": "Drove a multi-PR sequence in frontend, indicating end-to-end ownership.",
+          "agentNote": "Drove a multi‑PR frontend rollout, demonstrating end‑to‑end feature ownership."
+        },
+        {
+          "kind": "pr",
+          "title": "replay rollout",
+          "url": "https://github.com/PostHog/posthog/pull/53383",
+          "summary": "Drove a multi-PR sequence in replay, indicating end-to-end ownership.",
+          "agentNote": "Led the replay rollout across several PRs, showing coordinated delivery."
+        },
+        {
+          "kind": "pr",
+          "title": "insights rollout",
+          "url": "https://github.com/PostHog/posthog/pull/53165",
+          "summary": "Drove a multi-PR sequence in insights, indicating end-to-end ownership.",
+          "agentNote": "Managed the insights rollout through a series of PRs, highlighting full‑stack ownership."
+        },
+        {
+          "kind": "pr",
+          "title": "fix: remove SDK update banner from all pages",
+          "url": "https://github.com/PostHog/posthog/pull/46235",
+          "summary": "Improved infrastructure, shared systems, or engineering leverage.",
+          "agentNote": "Removed the SDK update banner, improving user experience and reducing confusion."
+        },
+        {
+          "kind": "pr",
+          "title": "feat: send feature flags with AI analytics events",
+          "url": "https://github.com/PostHog/posthog/pull/51914",
+          "summary": "Improved infrastructure, shared systems, or engineering leverage.",
+          "agentNote": "Added feature flag data to AI analytics events, enhancing observability and targeting."
+        }
+      ],
+      "agentSummary": "Paul Dambra drove end-to-end feature rollouts across frontend, replay, and insights while improving quality and infrastructure.",
+      "agentStrengths": [
+        "End-to-end ownership of major feature rollouts (frontend, replay, insights)",
+        "Strong focus on quality improvements and reliability fixes"
+      ],
+      "agentRisks": [
+        "Limited leverage impact, with low contribution to shared infrastructure or tooling"
+      ],
+      "agentImpactType": "Feature Delivery",
+      "agentWhyTopFive": "Shipped multiple high-visibility product features and consistently raised quality bar.",
+      "agentRankReason": "He achieved the highest combined delivery and quality scores, placing him at the top of the leaderboard.",
+      "agentDimensionRead": {
+        "delivery": "Strong",
+        "leverage": "Limited",
+        "quality": "Primary driver",
+        "collaboration": "Primary driver",
+        "scope": "Primary driver"
+      },
+      "agentDimensionReason": {
+        "delivery": "Delivery is strong at 29/30, built from 93.02 raw via 71.64 from 49 feature PRs + 21.38 from 16 initiatives.",
+        "leverage": "Leverage is limited at 6/25, built from 29.17 raw via 24.13 from 17 shared-system PRs + 5.04 from 3 platform initiatives.",
+        "quality": "Quality is primary driver at 20/20, built from 169.85 raw via 169.85 from 129 fix/reliability PRs.",
+        "collaboration": "Coordination is primary driver at 15/15, built from 177.56 raw via 168.12 from 145 discussion signals + 9.44 from 19 initiative coordination signals.",
+        "scope": "Scope is primary driver at 10/10, built from 20.1 raw via 20.1 from 19 initiative sequences."
+      },
+      "agentEvidence": [
+        {
+          "url": "https://github.com/PostHog/posthog/pull/52854",
+          "note": "Drove a multi‑PR frontend rollout, demonstrating end‑to‑end feature ownership."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53383",
+          "note": "Led the replay rollout across several PRs, showing coordinated delivery."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53165",
+          "note": "Managed the insights rollout through a series of PRs, highlighting full‑stack ownership."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/46235",
+          "note": "Removed the SDK update banner, improving user experience and reducing confusion."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/51914",
+          "note": "Added feature flag data to AI analytics events, enhancing observability and targeting."
+        }
+      ]
+    },
+    {
+      "login": "webjunkie",
+      "rank": 2,
+      "impactScore": 75,
+      "archetype": "Infrastructure Multiplier",
+      "scoreBreakdown": {
+        "delivery": 19,
+        "leverage": 25,
+        "quality": 12,
+        "collaboration": 10,
+        "scope": 9
+      },
+      "scoreInputs": {
+        "delivery": {
+          "raw": 61.43,
+          "parts": [
+            {
+              "label": "feature PR",
+              "value": 44,
+              "count": 31
+            },
+            {
+              "label": "initiative",
+              "value": 17.43,
+              "count": 14
+            }
+          ]
+        },
+        "leverage": {
+          "raw": 118.74,
+          "parts": [
+            {
+              "label": "shared-system PR",
+              "value": 114.76,
+              "count": 90
+            },
+            {
+              "label": "platform initiative",
+              "value": 3.98,
+              "count": 3
+            }
+          ]
+        },
+        "quality": {
+          "raw": 104.4,
+          "parts": [
+            {
+              "label": "fix/reliability PR",
+              "value": 104.4,
+              "count": 88
+            }
+          ]
+        },
+        "collaboration": {
+          "raw": 113.6,
+          "parts": [
+            {
+              "label": "discussion signal",
+              "value": 106.04,
+              "count": 100
+            },
+            {
+              "label": "initiative coordination signal",
+              "value": 7.56,
+              "count": 17
+            }
+          ]
+        },
+        "scope": {
+          "raw": 18.6,
+          "parts": [
+            {
+              "label": "initiative sequence",
+              "value": 17.4,
+              "count": 17
+            },
+            {
+              "label": "broad PR",
+              "value": 1.2,
+              "count": 2
+            }
+          ]
+        }
+      },
+      "whyTheyRanked": [
+        "Improved shared systems or engineering leverage.",
+        "Shipped meaningful product-facing work.",
+        "Reduced risk with fixes, reliability, or quality work."
+      ],
+      "evidence": [
+        {
+          "kind": "pr",
+          "title": "ci rollout",
+          "url": "https://github.com/PostHog/posthog/pull/50994",
+          "summary": "Drove a multi-PR sequence in ci, indicating end-to-end ownership.",
+          "agentNote": "CI rollout PR demonstrates end‑to‑end ownership of a multi‑PR infrastructure improvement."
+        },
+        {
+          "kind": "pr",
+          "title": "storybook rollout",
+          "url": "https://github.com/PostHog/posthog/pull/51467",
+          "summary": "Drove a multi-PR sequence in storybook, indicating end-to-end ownership.",
+          "agentNote": "Storybook rollout PR shows leadership in delivering a cohesive UI tooling upgrade."
+        },
+        {
+          "kind": "pr",
+          "title": "platform rollout",
+          "url": "https://github.com/PostHog/posthog/pull/52381",
+          "summary": "Drove a multi-PR sequence in platform, indicating end-to-end ownership.",
+          "agentNote": "Platform rollout PR highlights end‑to‑end delivery of a foundational platform enhancement."
+        },
+        {
+          "kind": "pr",
+          "title": "feat(db): add multi-database setup for products",
+          "url": "https://github.com/PostHog/posthog/pull/51267",
+          "summary": "Drew coordination around a meaningful PR with 7 discussion signals.",
+          "agentNote": "Multi‑database setup PR drew significant discussion, indicating effective cross‑team coordination."
+        },
+        {
+          "kind": "pr",
+          "title": "feat(devex): use orval JS API for in-process type generation",
+          "url": "https://github.com/PostHog/posthog/pull/51263",
+          "summary": "Drew coordination around a meaningful PR with 6 discussion signals.",
+          "agentNote": "Orval JS API PR generated notable discussion, reflecting strong collaboration on a developer‑experience feature."
+        }
+      ],
+      "agentSummary": "webjunkie is an Infrastructure Multiplier who drives high-leverage CI, Storybook, and platform improvements while delivering product-facing features and coordinating cross‑team work.",
+      "agentStrengths": [
+        "Exceptional leverage through system‑wide CI and platform rollouts",
+        "Strong delivery of meaningful product features with clear ownership"
+      ],
+      "agentRisks": [
+        "Collaboration signals are modest compared to peers, indicating limited broad coordination"
+      ],
+      "agentImpactType": "Infrastructure Multiplier",
+      "agentWhyTopFive": "Ranked #2 due to top‑tier leverage and delivery scores that outweigh moderate quality and lower collaboration/scope contributions.",
+      "agentRankReason": "Their leverage score of 25 and delivery score of 19 place them ahead of most peers, securing the second‑highest overall rank.",
+      "agentDimensionRead": {
+        "delivery": "Limited",
+        "leverage": "Primary driver",
+        "quality": "Supporting",
+        "collaboration": "Strong",
+        "scope": "Strong"
+      },
+      "agentDimensionReason": {
+        "delivery": "Delivery is limited at 19/30, built from 61.43 raw via 44 from 31 feature PRs + 17.43 from 14 initiatives.",
+        "leverage": "Leverage is primary driver at 25/25, built from 118.74 raw via 114.76 from 90 shared-system PRs + 3.98 from 3 platform initiatives.",
+        "quality": "Quality is supporting at 12/20, built from 104.4 raw via 104.4 from 88 fix/reliability PRs.",
+        "collaboration": "Coordination is strong at 10/15, built from 113.6 raw via 106.04 from 100 discussion signals + 7.56 from 17 initiative coordination signals.",
+        "scope": "Scope is strong at 9/10, built from 18.6 raw via 17.4 from 17 initiative sequences + 1.2 from 2 broad PRs."
+      },
+      "agentEvidence": [
+        {
+          "url": "https://github.com/PostHog/posthog/pull/50994",
+          "note": "CI rollout PR demonstrates end‑to‑end ownership of a multi‑PR infrastructure improvement."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/51467",
+          "note": "Storybook rollout PR shows leadership in delivering a cohesive UI tooling upgrade."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/52381",
+          "note": "Platform rollout PR highlights end‑to‑end delivery of a foundational platform enhancement."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/51267",
+          "note": "Multi‑database setup PR drew significant discussion, indicating effective cross‑team coordination."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/51263",
+          "note": "Orval JS API PR generated notable discussion, reflecting strong collaboration on a developer‑experience feature."
+        }
+      ]
+    },
+    {
+      "login": "thmsobrmlr",
+      "rank": 3,
+      "impactScore": 57,
+      "archetype": "Feature Driver",
+      "scoreBreakdown": {
+        "delivery": 24,
+        "leverage": 6,
+        "quality": 13,
+        "collaboration": 8,
+        "scope": 6
+      },
+      "scoreInputs": {
+        "delivery": {
+          "raw": 78.64,
+          "parts": [
+            {
+              "label": "feature PR",
+              "value": 63.44,
+              "count": 46
+            },
+            {
+              "label": "initiative",
+              "value": 15.2,
+              "count": 13
+            }
+          ]
+        },
+        "leverage": {
+          "raw": 29.72,
+          "parts": [
+            {
+              "label": "shared-system PR",
+              "value": 29.72,
+              "count": 23
+            }
+          ]
+        },
+        "quality": {
+          "raw": 107.21,
+          "parts": [
+            {
+              "label": "fix/reliability PR",
+              "value": 107.21,
+              "count": 88
+            }
+          ]
+        },
+        "collaboration": {
+          "raw": 88.8,
+          "parts": [
+            {
+              "label": "discussion signal",
+              "value": 83.24,
+              "count": 83
+            },
+            {
+              "label": "initiative coordination signal",
+              "value": 5.56,
+              "count": 13
+            }
+          ]
+        },
+        "scope": {
+          "raw": 12.9,
+          "parts": [
+            {
+              "label": "initiative sequence",
+              "value": 12.3,
+              "count": 13
+            },
+            {
+              "label": "broad PR",
+              "value": 0.6,
+              "count": 1
+            }
+          ]
+        }
+      },
+      "whyTheyRanked": [
+        "Shipped meaningful product-facing work.",
+        "Reduced risk with fixes, reliability, or quality work.",
+        "Handled work that required visible coordination and discussion."
+      ],
+      "evidence": [
+        {
+          "kind": "pr",
+          "title": "funnels rollout",
+          "url": "https://github.com/PostHog/posthog/pull/53608",
+          "summary": "Drove a multi-PR sequence in funnels, indicating end-to-end ownership.",
+          "agentNote": "Drove the end‑to‑end funnels feature rollout, showing ownership of a major product area."
+        },
+        {
+          "kind": "pr",
+          "title": "test rollout",
+          "url": "https://github.com/PostHog/posthog/pull/49105",
+          "summary": "Drove a multi-PR sequence in test, indicating end-to-end ownership.",
+          "agentNote": "Led the test infrastructure rollout, ensuring reliable end‑to‑end testing for new features."
+        },
+        {
+          "kind": "pr",
+          "title": "dashboards rollout",
+          "url": "https://github.com/PostHog/posthog/pull/53197",
+          "summary": "Drove a multi-PR sequence in dashboards, indicating end-to-end ownership.",
+          "agentNote": "Owned the dashboards feature rollout, delivering a key user‑facing component."
+        },
+        {
+          "kind": "pr",
+          "title": "trends rollout",
+          "url": "https://github.com/PostHog/posthog/pull/52228",
+          "summary": "Drove a multi-PR sequence in trends, indicating end-to-end ownership.",
+          "agentNote": "Managed the trends feature rollout, expanding analytics capabilities."
+        },
+        {
+          "kind": "pr",
+          "title": "sql rollout",
+          "url": "https://github.com/PostHog/posthog/pull/49851",
+          "summary": "Drove a multi-PR sequence in sql, indicating end-to-end ownership.",
+          "agentNote": "Spearheaded the SQL feature rollout, enhancing query capabilities."
+        }
+      ],
+      "agentSummary": "Thmsobrmlr drove end-to-end rollouts across multiple core features, delivering high-impact product work with solid quality.",
+      "agentStrengths": [
+        "End-to-end ownership of major feature rollouts",
+        "Consistent delivery of high-quality product features"
+      ],
+      "agentRisks": [
+        "Limited focus on leverage through tooling or automation improvements"
+      ],
+      "agentImpactType": "Feature Delivery",
+      "agentWhyTopFive": "Their strong delivery and quality scores placed them in the top five, despite modest leverage and scope contributions.",
+      "agentRankReason": "Ranked 3rd due to leading delivery and quality scores, while leverage and scope are lower than top peers.",
+      "agentDimensionRead": {
+        "delivery": "Supporting",
+        "leverage": "Limited",
+        "quality": "Supporting",
+        "collaboration": "Supporting",
+        "scope": "Supporting"
+      },
+      "agentDimensionReason": {
+        "delivery": "Delivery is supporting at 24/30, built from 78.64 raw via 63.44 from 46 feature PRs + 15.2 from 13 initiatives.",
+        "leverage": "Leverage is limited at 6/25, built from 29.72 raw via 29.72 from 23 shared-system PRs.",
+        "quality": "Quality is supporting at 13/20, built from 107.21 raw via 107.21 from 88 fix/reliability PRs.",
+        "collaboration": "Coordination is supporting at 8/15, built from 88.8 raw via 83.24 from 83 discussion signals + 5.56 from 13 initiative coordination signals.",
+        "scope": "Scope is supporting at 6/10, built from 12.9 raw via 12.3 from 13 initiative sequences + 0.6 from 1 broad PR."
+      },
+      "agentEvidence": [
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53608",
+          "note": "Drove the end‑to‑end funnels feature rollout, showing ownership of a major product area."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/49105",
+          "note": "Led the test infrastructure rollout, ensuring reliable end‑to‑end testing for new features."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53197",
+          "note": "Owned the dashboards feature rollout, delivering a key user‑facing component."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/52228",
+          "note": "Managed the trends feature rollout, expanding analytics capabilities."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/49851",
+          "note": "Spearheaded the SQL feature rollout, enhancing query capabilities."
+        }
+      ]
+    },
+    {
+      "login": "veryayskiy",
+      "rank": 4,
+      "impactScore": 43,
+      "archetype": "Feature Driver",
+      "scoreBreakdown": {
+        "delivery": 30,
+        "leverage": 1,
+        "quality": 4,
+        "collaboration": 5,
+        "scope": 3
+      },
+      "scoreInputs": {
+        "delivery": {
+          "raw": 96.87,
+          "parts": [
+            {
+              "label": "feature PR",
+              "value": 92.8,
+              "count": 74
+            },
+            {
+              "label": "initiative",
+              "value": 4.07,
+              "count": 3
+            }
+          ]
+        },
+        "leverage": {
+          "raw": 4.86,
+          "parts": [
+            {
+              "label": "shared-system PR",
+              "value": 4.03,
+              "count": 4
+            },
+            {
+              "label": "platform initiative",
+              "value": 0.83,
+              "count": 2
+            }
+          ]
+        },
+        "quality": {
+          "raw": 37.4,
+          "parts": [
+            {
+              "label": "fix/reliability PR",
+              "value": 37.4,
+              "count": 34
+            }
+          ]
+        },
+        "collaboration": {
+          "raw": 56.4,
+          "parts": [
+            {
+              "label": "discussion signal",
+              "value": 53.84,
+              "count": 60
+            },
+            {
+              "label": "initiative coordination signal",
+              "value": 2.56,
+              "count": 5
+            }
+          ]
+        },
+        "scope": {
+          "raw": 5.4,
+          "parts": [
+            {
+              "label": "initiative sequence",
+              "value": 5.4,
+              "count": 5
+            }
+          ]
+        }
+      },
+      "whyTheyRanked": [
+        "Shipped meaningful product-facing work.",
+        "Handled work that required visible coordination and discussion.",
+        "Reduced risk with fixes, reliability, or quality work."
+      ],
+      "evidence": [
+        {
+          "kind": "pr",
+          "title": "support rollout",
+          "url": "https://github.com/PostHog/posthog/pull/53545",
+          "summary": "Drove a multi-PR sequence in support, indicating end-to-end ownership.",
+          "agentNote": "Drove a multi‑PR sequence that delivered end‑to‑end support rollout, showing ownership."
+        },
+        {
+          "kind": "pr",
+          "title": "workflows rollout",
+          "url": "https://github.com/PostHog/posthog/pull/50541",
+          "summary": "Drove a multi-PR sequence in workflows, indicating end-to-end ownership.",
+          "agentNote": "Led a multi‑PR workflows rollout, demonstrating end‑to‑end feature delivery."
+        },
+        {
+          "kind": "pr",
+          "title": "feat: tags in support tickets",
+          "url": "https://github.com/PostHog/posthog/pull/49787",
+          "summary": "Drew coordination around a meaningful PR with 9 discussion signals.",
+          "agentNote": "Generated 9 discussion signals, coordinating around a meaningful ticket‑tagging feature."
+        },
+        {
+          "kind": "pr",
+          "title": "feat: add SLA to the tickets",
+          "url": "https://github.com/PostHog/posthog/pull/49566",
+          "summary": "Drew coordination around a meaningful PR with 7 discussion signals.",
+          "agentNote": "Earned 7 discussion signals, driving coordination on SLA addition for tickets."
+        },
+        {
+          "kind": "pr",
+          "title": "feat: slack channel for support",
+          "url": "https://github.com/PostHog/posthog/pull/47678",
+          "summary": "Drew coordination around a meaningful PR with 9 discussion signals.",
+          "agentNote": "Produced 9 discussion signals, leading the effort to add a Slack channel for support."
+        }
+      ],
+      "agentSummary": "Veryayskiy is a Feature Driver who shipped multiple end‑to‑end product features, coordinated heavily on tickets and integrations, and contributed quality improvements, but their leverage remains low.",
+      "agentStrengths": [
+        "End‑to‑end feature ownership",
+        "Strong cross‑team coordination"
+      ],
+      "agentRisks": [
+        "Low leverage limits broader system‑wide impact"
+      ],
+      "agentImpactType": "Feature Driver",
+      "agentWhyTopFive": "They shipped meaningful product‑facing work, drove visible coordination, and reduced risk through reliability fixes.",
+      "agentRankReason": "Ranked 4th due to strong delivery and collaboration scores, but limited leverage keeps them behind higher‑impact peers.",
+      "agentDimensionRead": {
+        "delivery": "Primary driver",
+        "leverage": "Limited",
+        "quality": "Limited",
+        "collaboration": "Limited",
+        "scope": "Limited"
+      },
+      "agentDimensionReason": {
+        "delivery": "Delivery is primary driver at 30/30, built from 96.87 raw via 92.8 from 74 feature PRs + 4.07 from 3 initiatives.",
+        "leverage": "Leverage is limited at 1/25, built from 4.86 raw via 4.03 from 4 shared-system PRs + 0.83 from 2 platform initiatives.",
+        "quality": "Quality is limited at 4/20, built from 37.4 raw via 37.4 from 34 fix/reliability PRs.",
+        "collaboration": "Coordination is limited at 5/15, built from 56.4 raw via 53.84 from 60 discussion signals + 2.56 from 5 initiative coordination signals.",
+        "scope": "Scope is limited at 3/10, built from 5.4 raw via 5.4 from 5 initiative sequences."
+      },
+      "agentEvidence": [
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53545",
+          "note": "Drove a multi‑PR sequence that delivered end‑to‑end support rollout, showing ownership."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/50541",
+          "note": "Led a multi‑PR workflows rollout, demonstrating end‑to‑end feature delivery."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/49787",
+          "note": "Generated 9 discussion signals, coordinating around a meaningful ticket‑tagging feature."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/49566",
+          "note": "Earned 7 discussion signals, driving coordination on SLA addition for tickets."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/47678",
+          "note": "Produced 9 discussion signals, leading the effort to add a Slack channel for support."
+        }
+      ]
+    },
+    {
+      "login": "andrewm4894",
+      "rank": 5,
+      "impactScore": 42,
+      "archetype": "Feature Driver",
+      "scoreBreakdown": {
+        "delivery": 22,
+        "leverage": 5,
+        "quality": 8,
+        "collaboration": 3,
+        "scope": 4
+      },
+      "scoreInputs": {
+        "delivery": {
+          "raw": 70.56,
+          "parts": [
+            {
+              "label": "feature PR",
+              "value": 63.8,
+              "count": 51
+            },
+            {
+              "label": "initiative",
+              "value": 6.76,
+              "count": 5
+            }
+          ]
+        },
+        "leverage": {
+          "raw": 24.55,
+          "parts": [
+            {
+              "label": "shared-system PR",
+              "value": 24.55,
+              "count": 20
+            }
+          ]
+        },
+        "quality": {
+          "raw": 68.29,
+          "parts": [
+            {
+              "label": "fix/reliability PR",
+              "value": 68.29,
+              "count": 61
+            }
+          ]
+        },
+        "collaboration": {
+          "raw": 34.84,
+          "parts": [
+            {
+              "label": "discussion signal",
+              "value": 32.6,
+              "count": 32
+            },
+            {
+              "label": "initiative coordination signal",
+              "value": 2.24,
+              "count": 5
+            }
+          ]
+        },
+        "scope": {
+          "raw": 7.5,
+          "parts": [
+            {
+              "label": "initiative sequence",
+              "value": 5.1,
+              "count": 5
+            },
+            {
+              "label": "broad PR",
+              "value": 2.4,
+              "count": 4
+            }
+          ]
+        }
+      },
+      "whyTheyRanked": [
+        "Shipped meaningful product-facing work.",
+        "Reduced risk with fixes, reliability, or quality work.",
+        "Improved shared systems or engineering leverage."
+      ],
+      "evidence": [
+        {
+          "kind": "pr",
+          "title": "feat(llma): add skills-store skill for discovering shared team prompts",
+          "url": "https://github.com/PostHog/posthog/pull/53367",
+          "summary": "Drew coordination around a meaningful PR with 7 discussion signals.",
+          "agentNote": "Added a skills‑store skill for discovering shared team prompts, enabling reuse across projects."
+        },
+        {
+          "kind": "pr",
+          "title": "feat(alerts): default zscore and mad detectors to use differencing",
+          "url": "https://github.com/PostHog/posthog/pull/52540",
+          "summary": "Drew coordination around a meaningful PR with 2 discussion signals.",
+          "agentNote": "Changed default alert detectors to use differencing, improving detection accuracy and reducing false positives."
+        },
+        {
+          "kind": "pr",
+          "title": "fix(docs): remove unused CalloutBox import in openai-agents",
+          "url": "https://github.com/PostHog/posthog/pull/46079",
+          "summary": "Covered broad surface area with 0 changed files.",
+          "agentNote": "Removed an unused import, a minor cleanup that reduced code noise."
+        },
+        {
+          "kind": "pr",
+          "title": "feat(data-warehouse): add MCP tools for materialized views",
+          "url": "https://github.com/PostHog/posthog/pull/50859",
+          "summary": "Drew coordination around a meaningful PR with 8 discussion signals.",
+          "agentNote": "Introduced MCP tools for materialized views, expanding the data‑warehouse feature set."
+        },
+        {
+          "kind": "pr",
+          "title": "feat(llma): generation-level sentiment queries and caching",
+          "url": "https://github.com/PostHog/posthog/pull/49214",
+          "summary": "Drew coordination around a meaningful PR with 6 discussion signals.",
+          "agentNote": "Added generation‑level sentiment queries and caching, enhancing LLM‑based functionality."
+        }
+      ],
+      "agentSummary": "Andrew (andrewm4894) is a Feature Driver who shipped several user‑facing enhancements and reliability improvements over the last 90 days, contributing notably to product features while showing limited impact on leverage and collaboration.",
+      "agentStrengths": [
+        "Consistently delivered meaningful product‑facing features.",
+        "Improved system reliability through targeted fixes and quality work."
+      ],
+      "agentRisks": [
+        "Low leverage and collaboration scores suggest limited influence on shared tooling or cross‑team coordination."
+      ],
+      "agentImpactType": "Feature Driver",
+      "agentWhyTopFive": "Ranked in the top five due to solid delivery of visible product work and quality improvements that reduced risk.",
+      "agentRankReason": "His strong delivery score (22) placed him above peers with lower feature output, while modest leverage and collaboration kept him from ranking higher.",
+      "agentDimensionRead": {
+        "delivery": "Supporting",
+        "leverage": "Limited",
+        "quality": "Supporting",
+        "collaboration": "Limited",
+        "scope": "Supporting"
+      },
+      "agentDimensionReason": {
+        "delivery": "Delivery is supporting at 22/30, built from 70.56 raw via 63.8 from 51 feature PRs + 6.76 from 5 initiatives.",
+        "leverage": "Leverage is limited at 5/25, built from 24.55 raw via 24.55 from 20 shared-system PRs.",
+        "quality": "Quality is supporting at 8/20, built from 68.29 raw via 68.29 from 61 fix/reliability PRs.",
+        "collaboration": "Coordination is limited at 3/15, built from 34.84 raw via 32.6 from 32 discussion signals + 2.24 from 5 initiative coordination signals.",
+        "scope": "Scope is supporting at 4/10, built from 7.5 raw via 5.1 from 5 initiative sequences + 2.4 from 4 broad PRs."
+      },
+      "agentEvidence": [
+        {
+          "url": "https://github.com/PostHog/posthog/pull/53367",
+          "note": "Added a skills‑store skill for discovering shared team prompts, enabling reuse across projects."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/52540",
+          "note": "Changed default alert detectors to use differencing, improving detection accuracy and reducing false positives."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/46079",
+          "note": "Removed an unused import, a minor cleanup that reduced code noise."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/50859",
+          "note": "Introduced MCP tools for materialized views, expanding the data‑warehouse feature set."
+        },
+        {
+          "url": "https://github.com/PostHog/posthog/pull/49214",
+          "note": "Added generation‑level sentiment queries and caching, enhancing LLM‑based functionality."
+        }
+      ]
+    }
+  ]
+}
